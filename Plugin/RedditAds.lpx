@@ -4,7 +4,7 @@
 #!homepage=https://raw.githubusercontent.com/ddgksf2013/Rewrite/refs/heads/master/AdBlock/RedditAds.conf
 
 [Script]
-http-response ^https?:\/\/gql-fed\.reddit\.com\/$ script-path=https://raw.githubusercontent.com/ddgksf2013/Scripts/refs/heads/master/reddit.js, requires-body=true, timeout=60
+http-response ^https?:\/\/gql-fed\.reddit\.com\/$ script-path=https://raw.githubusercontent.com/zmjde/loon-plugins/main/JS/Ext/reddit.js, requires-body=true, timeout=60
 
 [Mitm]
 hostname = gql-fed.reddit.com
