@@ -1,0 +1,22 @@
+#!name=墨迹天气净化[墨鱼版]
+#!desc=如需引用请注明出处，谢谢合作！
+#!author=@ddgksf2013
+#!note=jsonjq 规则已转为 JS 实现 (Minis)
+#!homepage=https://raw.githubusercontent.com/ddgksf2013/Rewrite/refs/heads/master/AdBlock/MoJiWeatherAds.conf
+
+[Rewrite]
+^https?:\/\/.*api\.moji\.com\/flycard\/flyCard url reject-200
+^https?:\/\/.*api\.moji\.com\/shortvideo url reject-200
+^https?:\/\/.*api\.moji\.com\/json\/advertising_goods url reject-200
+^https?:\/\/.*api\.moji\.com\/forum url reject-200
+^https?:\/\/.*api\.moji\.com\/user\/dynamic_v\d\/json\/someone_interest url reject-200
+^https:\/\/tnc.*zijieapi\.com\/get_domains url reject-200
+
+[Rule]
+DOMAIN-SUFFIX,adlaunch.moji.com,REJECT
+
+[Script]
+http-response ^https?://(?:[^/]+\.api\.moji\.com|[^/]+\.zijieapi\.com)/ script-path=https://raw.githubusercontent.com/zmjde/loon-plugins/main/Script/MoJiWeatherAds.js, requires-body=true, max-size=-1, timeout=60
+
+[Mitm]
+hostname = *.api.moji.com,*.zijieapi.com

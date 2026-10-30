@@ -1,0 +1,14 @@
+#!name=淘票票净化[墨鱼版]
+#!desc=使用前请卸载淘票票，挂载脚本然后使用
+#!author=@ddgksf2013
+#!note=jsonjq 规则已转为 JS 实现 (Minis)
+#!homepage=https://raw.githubusercontent.com/ddgksf2013/Rewrite/refs/heads/master/AdBlock/TaoPiaoPiaoAds.conf
+
+[Rewrite]
+
+[Script]
+http-response ^https?://(?:acs\.m\.taobao\.com)/ script-path=https://raw.githubusercontent.com/zmjde/loon-plugins/main/Script/TaoPiaoPiaoAds.js, requires-body=true, max-size=-1, timeout=60
+http-response ^http:\/\/amdc\.m\.taobao\.com script-path=https://raw.githubusercontent.com/ddgksf2013/Scripts/refs/heads/master/amdc.js, requires-body=true, timeout=60
+
+[Mitm]
+hostname = acs.m.taobao.com

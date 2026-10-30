@@ -1,0 +1,14 @@
+#!name=IOS伪装影视APP净化[墨鱼版]
+#!desc=如果广告仍然存在，请清除缓存或卸载应用重新安装
+#!author=@ddgksf2013
+#!note=jsonjq 规则已转为 JS 实现 (Minis)
+#!homepage=https://raw.githubusercontent.com/ddgksf2013/Rewrite/refs/heads/master/AdBlock/FakeiOSAds.conf
+
+[Rewrite]
+^http:\/\/[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+){1,4}(:\d+)?\/.*?\/v\d\/(version|notice\?|top_notice\?|advert\?position=[^2]+) url reject-200
+
+[Script]
+http-response ^https?://(?:app\.dsx\.ac)/ script-path=https://raw.githubusercontent.com/zmjde/loon-plugins/main/Script/FakeiOSAds.js, requires-body=true, max-size=-1, timeout=60
+
+[Mitm]
+hostname = app.dsx.ac

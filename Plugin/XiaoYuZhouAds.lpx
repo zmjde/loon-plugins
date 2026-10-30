@@ -1,0 +1,17 @@
+#!name=小宇宙FM去广告[墨鱼版]
+#!desc=如需引用请注明出处，谢谢合作！
+#!author=@ddgksf2013
+#!note=jsonjq 规则已转为 JS 实现 (Minis)
+#!homepage=https://raw.githubusercontent.com/ddgksf2013/Rewrite/refs/heads/master/AdBlock/XiaoYuZhouAds.conf
+
+[Rewrite]
+^https?:\/\/api\.xiaoyuzhoufm\.com\/v\d\/search\/get-express url reject-200
+^https?:\/\/api\.xiaoyuzhoufm\.com\/v\d\/search\/get-preset url reject-200
+^https?:\/\/api\.xiaoyuzhoufm\.com\/v\d\/category\/list-daily-suggestion url reject-200
+^https?:\/\/api\.xiaoyuzhoufm\.com\/v\d\/flash-screen\/list url reject-200
+
+[Script]
+http-response ^https?://(?:api\.xiaoyuzhoufm\.com|118\.31\.123\.175|112\.124\.203\.116|118\.31\.125\.171|47\.57\.181\.112|47\.57\.182\.96)/ script-path=https://raw.githubusercontent.com/zmjde/loon-plugins/main/Script/XiaoYuZhouAds.js, requires-body=true, max-size=-1, timeout=60
+
+[Mitm]
+hostname = api.xiaoyuzhoufm.com,118.31.123.175,112.124.203.116,118.31.125.171,47.57.181.112,47.57.182.96

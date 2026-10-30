@@ -1,0 +1,10 @@
+#!name=Reddit增强[墨鱼版]
+#!desc=如需引用请注明出处，谢谢合作！
+#!author=@ddgksf2013
+#!homepage=https://raw.githubusercontent.com/ddgksf2013/Rewrite/refs/heads/master/AdBlock/RedditAds.conf
+
+[Script]
+http-response ^https?:\/\/gql-fed\.reddit\.com\/$ script-path=https://raw.githubusercontent.com/ddgksf2013/Scripts/refs/heads/master/reddit.js, requires-body=true, timeout=60
+
+[Mitm]
+hostname = gql-fed.reddit.com
