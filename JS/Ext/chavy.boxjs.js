@@ -415,27 +415,27 @@ function getSystemApps() {
       scripts: [
         {
           name: "抹掉：所有缓存",
-          script: "https://raw.githubusercontent.com/chavyleung/scripts/master/box/scripts/boxjs.revert.caches.js"
+          script: "https://raw.githubusercontent.com/zmjde/loon-plugins/main/JS/Ext/BoxJs/chavyleung__scripts__master__box__scripts__boxjs.revert.caches.js"
         },
         {
           name: "抹掉：收藏应用",
-          script: "https://raw.githubusercontent.com/chavyleung/scripts/master/box/scripts/boxjs.revert.usercfgs.favapps.js"
+          script: "https://raw.githubusercontent.com/zmjde/loon-plugins/main/JS/Ext/BoxJs/chavyleung__scripts__master__box__scripts__boxjs.revert.usercfgs.favapps.js"
         },
         {
           name: "抹掉：用户偏好",
-          script: "https://raw.githubusercontent.com/chavyleung/scripts/master/box/scripts/boxjs.revert.usercfgs.js"
+          script: "https://raw.githubusercontent.com/zmjde/loon-plugins/main/JS/Ext/BoxJs/chavyleung__scripts__master__box__scripts__boxjs.revert.usercfgs.js"
         },
         {
           name: "抹掉：所有会话",
-          script: "https://raw.githubusercontent.com/chavyleung/scripts/master/box/scripts/boxjs.revert.usercfgs.sessions.js"
+          script: "https://raw.githubusercontent.com/zmjde/loon-plugins/main/JS/Ext/BoxJs/chavyleung__scripts__master__box__scripts__boxjs.revert.usercfgs.sessions.js"
         },
         {
           name: "抹掉：所有备份",
-          script: "https://raw.githubusercontent.com/chavyleung/scripts/master/box/scripts/boxjs.revert.baks.js"
+          script: "https://raw.githubusercontent.com/zmjde/loon-plugins/main/JS/Ext/BoxJs/chavyleung__scripts__master__box__scripts__boxjs.revert.baks.js"
         },
         {
           name: "抹掉：BoxJs (注意备份)",
-          script: "https://raw.githubusercontent.com/chavyleung/scripts/master/box/scripts/boxjs.revert.boxjs.js"
+          script: "https://raw.githubusercontent.com/zmjde/loon-plugins/main/JS/Ext/BoxJs/chavyleung__scripts__master__box__scripts__boxjs.revert.boxjs.js"
         }
       ],
       author: '@chavyleung',
@@ -457,7 +457,7 @@ function getSystemApps() {
         'https://raw.githubusercontent.com/chavyleung/scripts/master/box/icons/BoxSwitcher.mini.png',
         'https://raw.githubusercontent.com/chavyleung/scripts/master/box/icons/BoxSwitcher.png'
       ],
-      script: 'https://raw.githubusercontent.com/chavyleung/scripts/master/box/switcher/box.switcher.js'
+      script: 'https://raw.githubusercontent.com/zmjde/loon-plugins/main/JS/Ext/BoxJs/chavyleung__scripts__master__box__switcher__box.switcher.js'
     },
     {
       id: "BoxGist",
@@ -493,15 +493,15 @@ function getSystemApps() {
       scripts: [
         {
           name: "备份 Gist",
-          script: "https://raw.githubusercontent.com/dompling/Script/master/gist/backup.js"
+          script: "https://raw.githubusercontent.com/zmjde/loon-plugins/main/JS/Ext/BoxJs/dompling__Script__master__gist__backup.js"
         },
         {
           name: "从 Gist 恢复",
-          script: "https://raw.githubusercontent.com/dompling/Script/master/gist/restore.js"
+          script: "https://raw.githubusercontent.com/zmjde/loon-plugins/main/JS/Ext/BoxJs/dompling__Script__master__gist__restore.js"
         },
         {
           name: "更新历史版本",
-          script: "https://raw.githubusercontent.com/dompling/Script/master/gist/commit.js"
+          script: "https://raw.githubusercontent.com/zmjde/loon-plugins/main/JS/Ext/BoxJs/dompling__Script__master__gist__commit.js"
         }
       ],
       settings: [
